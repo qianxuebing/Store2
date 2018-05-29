@@ -1,0 +1,12 @@
+$designWidth: 750;
+@function p( $px) {
+    @return $px*750/$designWidth/20+rem;  
+}
+
+.wrapper{
+    width: p(526);
+    height: p(400);
+    border: 1px solid #ddd;
+    background: deepskyblue;
+}
+

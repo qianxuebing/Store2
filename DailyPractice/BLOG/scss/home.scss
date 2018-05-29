@@ -1,7 +1,8 @@
 .wrapper {
-    background: url(./images/banner.jpg) no-repeat;
+    background: url(../images/banner.jpg) no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    overflow-x: hidden;
     // header
     .header {
         nav {
@@ -11,19 +12,36 @@
             ul li {
                 float: right;
                 margin-right: 30px;
+                &.active{
+                    position: relative;
+                    span{
+                        position: absolute;
+                        left: 0;
+                        bottom: 8px;
+                        background: #fff;
+                        height: 3px;
+                        width: 100%;
+                    }
+                }
+                a{
+                    color: #fff;
+                    &:hover{
+                        color: deepskyblue;
+                    }
+                }
+
             }
             ul .logo {
                 float: left;
                 margin-left: 50px;
                 a {
                     font-size: 20px;
-                    color: #fff;
                     font-weight: 700;
                 }
             }
         }
         .banner {
-            height: 570px;
+            height: 600px;
              background: rgba(0, 0, 0, 0.3);
             .inner {
                 margin: 0 auto;

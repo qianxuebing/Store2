@@ -12,7 +12,16 @@ $(function(){
     // 返回顶部
     $(".go-top").click(function(){
         $("body,html").animate({scrollTop:0},300);
+    });
+
+    // Tab切换
+    $(".header").on("click",".nav-list li",function(){
+        $(this).addClass("active").siblings().removeClass("active");
     })
+
+   
+
+
 
 
 })
